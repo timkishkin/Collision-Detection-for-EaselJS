@@ -1,0 +1,24 @@
+{
+  "name": "ndgmr-collision-detection-tim",
+  "homepage": "https://github.com/timkishkin/Collision-Detection-for-EaselJS",
+  "description": "Bower package for https://github.com/olsn/Collision-Detection-for-EaselJS, with little fix by Tim Kishkin",
+  "main": "src/ndgmr.Collision.js",
+  "keywords": [
+    "html5",
+    "canvas",
+    "collision-detection",
+    "easeljs",
+    "createjs"
+  ],
+  "authors": [
+    "timkishkin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
