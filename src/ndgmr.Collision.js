@@ -280,12 +280,15 @@ this.ndgmr = this.ndgmr || {};
           bounds.x = obj.x || 0;
           bounds.y = obj.y || 0;
         }
+      } else if (obj instanceof createjs.Shape) {
+        // TKI: use getBounds() for shapes. The original implementation does not calculate bounds for shapes
+        return obj.getBounds();
       } else {
-        bounds.x = obj.x || 0;
-        bounds.y = obj.y || 0;
+         bounds.x = obj.x || 0;
+         bounds.y = obj.y || 0;
       }
 
-      imgr.regX = imgr.regX || 0; imgr.width  = imgr.width  || 0;
+        imgr.regX = imgr.regX || 0; imgr.width  = imgr.width  || 0;
       imgr.regY = imgr.regY || 0; imgr.height = imgr.height || 0;
       bounds.regX = imgr.regX;
       bounds.regY = imgr.regY;
